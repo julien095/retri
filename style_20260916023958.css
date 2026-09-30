@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    padding:40px;
+}
+
+.bwat{
+    max-width: 450px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h2, h3, h4{
+    text-align: center;
+}
+
+input{
+    width: 100px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 12px 20px;
+    background: rgb(92, 203, 250);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.bouton-yo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#dezyem,
+#twazyem{
+    display: none;
+}
+
+#mesaj{
+    color: rgb(241, 84, 63);
+    text-align: center;
+}
+
+#reyisi{
+    color:rgb(144, 240, 144);
+    text-align:center;
+    font-weight: bold;
+}

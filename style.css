@@ -1,0 +1,309 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #222;
+}
+
+/* MENU */
+
+.header {
+    width: 100%;
+    min-height: 75px;
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 7%;
+    gap: 25px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo h1 {
+    font-size: 25px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header nav a:hover {
+    color: #f39c12;
+}
+
+/* PAGE D'ACCUEIL */
+
+main {
+    width: 100%;
+}
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: #e8f4fa;
+}
+
+.hero-text {
+    width: 100%;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* BOUTONS */
+
+button {
+    padding: 12px 20px;
+    background: rgb(234, 149, 2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* SECTIONS */
+
+.mizek,
+.album,
+.playlist,
+#podcast {
+    width: 100%;
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.mizek h2 {
+    margin-bottom: 30px;
+}
+
+/* CARTES MUSICALES */
+
+.mizek-yo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.mizik {
+    width: 250px;
+    max-width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cover img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ALBUMS */
+
+.album-kat {
+    width: 280px;
+    max-width: 100%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.album-kat img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* FORMULAIRE */
+
+.bwat {
+    width: calc(100% - 30px);
+    max-width: 450px;
+    margin: 40px auto;
+    background: rgb(57, 164, 251);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.bwat h3,
+h2,
+h4 {
+    text-align: center;
+}
+
+.bwat input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #433001;
+    font-size: 15px;
+}
+
+.bouton-yo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#dezyem,
+#twazyem {
+    display: none;
+}
+
+#mesaj {
+    color: #a12618;
+    text-align: center;
+}
+
+#reyisi {
+    color: darkgreen;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* TELEFÒN AK TI EKRAN */
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 12px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .header nav {
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .header nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 40px 18px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .mizek,
+    .album,
+    .playlist,
+    #podcast {
+        padding: 35px 15px;
+    }
+
+    .mizik {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .bwat {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header nav {
+        gap: 12px;
+    }
+
+    .header nav a {
+        font-size: 13px;
+    }
+
+    .bouton-yo button {
+        padding: 10px 12px;
+    }
+}
+
+#whatsapp{
+    position: fixed;
+    bottom:25px;
+    right:25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgb(107, 250, 107);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#whatsapp:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="ht"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Music Platform</title> 
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head> 
+<body> 
+    <!-- MENU -->
+    <header class="header">
+
+        <div class="logo">
+            <h1>Music Platfom</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Akey</a>
+            <a href="Album.html" onclick="mandeAkses(event, 'Album')">Album</a>
+            <a href="Playlist.html" onclick="mandeAkses(event, 'Playlist')">Playlist</a>
+            <a href="podcast.html">Podcast</a>
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE AKEY -->
+    <main id="akèy">
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <h1>Byenveni sou Music Platfom</h1>
+
+                <p>
+                    Dekouvri mizik, album, playlist ak podcast
+                    ou renmen yo.
+                </p>
+
+                <button onclick="mandeAkses(event, 'Mizik')">
+                    Koute mizik
+                </button>
+
+            </div>
+
+        </section>
+
+        
+        <!-- MIZIK -->
+        <section class="mizek">
+
+            <h2>Mizik yo</h2>
+
+            <div class="mizek-yo">
+
+                <div class="mizik">
+
+                    <div class="cover">
+                        <img src="images/mizik1.jpg" alt="Mizik 1">
+                    </div>
+
+                    <h3>Mizik 1</h3>
+
+                    <p>PowerMusic Artist</p>
+
+                    <button onclick="mandeAkses(event, 'Mizik 1')">
+                        ▶ Tande
+                    </button>
+
+                </div>
+ 
+    
+    <footer>
+
+    </footer>
+   <button id="whatsapp" title="Contactez-nous sur whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+   </button>
+   
+ <script src="script.js"></script> 
+</body> 
+</html>
